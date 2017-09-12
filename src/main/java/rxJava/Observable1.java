@@ -14,7 +14,7 @@ public class Observable1 {
 		 
 		//onNext, onError, onComplete 모두 설정한 예제
 		//dispose()는 Observable이 더이상 데이터를 발행하지 않도록 구독을 해지하는 함수
-		//onComplete 알림을 보냈을때는 자동으로 dispose()를 호출해 구독자 관계를 해지하므로, 구독자가 별도로 호출할 필요가 없
+		//onComplete 알림을 보냈을때는 자동으로 dispose()를 호출해 구독자 관계를 해지하므로, 구독자가 별도로 호출할 필요가 없음
 		Observable<String> source = Observable.just("RED", "GREEN", "YELLOW");
 		Disposable d = source.subscribe(
 				v -> System.out.println("onNext() : value : " + v),
