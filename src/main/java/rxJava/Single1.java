@@ -24,7 +24,7 @@ public class Single1 {
 		
 		//2.single() 메서드를 사용하여 Observable to Single
 		//single() 메서드는 default value를 인자로 가지며, Observable이 데이터를 발행하지 않을때 기본값을 대신 발행
-		//데이터가 여러개인 Observable을 single() 메서드로 변환 시도시, 에러발생
+		//데이터가 여러개인 Observable을 single() 메서드로 변환 시도시 에러발생 (두번째 값을 발행하는 onNext에서 에러 발생함)
 		Observable.just("Hello Single").single("default item").subscribe(System.out::println);
 		
 		//3.empty() 메서드를 통해 Single 객체를 생성. 데이터 발행 후 onSuccess 이벤트 발생
@@ -36,7 +36,6 @@ public class Single1 {
 		
 		//5.take() 메서드를 사용하여 Single 객체 생성
 		Observable.just(new Order("coffee"), new Order("juice")).take(1).subscribe(System.out::println);
-		
 		
 	}
 	
