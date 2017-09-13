@@ -1,11 +1,11 @@
-package rxJava;
+package rxjava.observable;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 
-public class Observable1 {
+public class ObservableEx1 {
 	
 	public void emit() {
 		//just() : Observable을 생성하여 인자로 넣은 데이터를 차례로 발행함. (subscribe를 호출해야 시작됨)
@@ -46,7 +46,7 @@ public class Observable1 {
 	}
 
 	public static void main(String[] args) {
-		Observable1 observable = new Observable1();
+		ObservableEx1 observable = new ObservableEx1();
 		observable.emit();
 	}
 

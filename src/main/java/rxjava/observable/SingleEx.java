@@ -1,10 +1,10 @@
-package rxJava;
+package rxjava.observable;
 
 import common.Order;
 import io.reactivex.Observable;
 import io.reactivex.Single;
 
-public class Single1 {
+public class SingleEx {
 
 	public void emit() {
 		/**
@@ -40,7 +40,7 @@ public class Single1 {
 	}
 	
 	public static void main(String[] args) {
-		Single1 observable = new Single1();
+		SingleEx observable = new SingleEx();
 		observable.emit();
 	}
 

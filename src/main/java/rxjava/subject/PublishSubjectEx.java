@@ -1,4 +1,4 @@
-package subject;
+package rxjava.subject;
 
 import io.reactivex.subjects.PublishSubject;
 

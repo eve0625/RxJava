@@ -1,4 +1,4 @@
-package subject;
+package rxjava.subject;
 
 import io.reactivex.Observable;
 import io.reactivex.subjects.AsyncSubject;

@@ -1,4 +1,4 @@
-package rxJava;
+package rxjava.observable;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -17,7 +17,7 @@ import org.reactivestreams.Subscriber;
 import common.Order;
 import io.reactivex.Observable;
 
-public class Observable2 {
+public class ObservableEx2 {
 
 	public void emit() {
 		/**
@@ -94,7 +94,7 @@ public class Observable2 {
 	}
 	
 	public static void main(String[] args) {
-		Observable2 observable = new Observable2();
+		ObservableEx2 observable = new ObservableEx2();
 		observable.emit();
 	}
 
