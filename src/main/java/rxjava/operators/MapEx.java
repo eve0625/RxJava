@@ -6,14 +6,14 @@ import io.reactivex.functions.Function;
 public class MapEx {
 	
 	/**
-	 * map : 어떤 함수에 입력값을 넣어서 원하는 값으로 변환하는 함수
+	 * map : 어떤 함수에 입력값을 넣어서 원하는 값으로 변환하는 함수 (1:1 함수)
 	 */
 	private void test() {
 		String[] balls = {"1", "2", "3", "5"};
 		Observable<String> source = Observable.fromArray(balls);
-		source.map(ball -> ball + "ㅁ").subscribe(System.out::println);
+		source.map(ball -> ball + "♢").subscribe(System.out::println);
 		
-		Function<String, String> getDiamond = ball -> ball + "ㅁ";
+		Function<String, String> getDiamond = ball -> ball + "♢";
 		Observable<String> source2 = Observable.fromArray(balls);
 		source2.map(getDiamond).subscribe(System.out::println);
 	
