@@ -20,6 +20,9 @@ public class DeferEx {
 	
 	public void test() {
 		Callable<Observable<String>> supplier = () -> getObservable();
+		//defer 함수를 호출하면 subscribe() 함수를 호출할때의 상황을 반영하여 데이터 흐름의 생성을 지연하는 효과
+		//즉 첫번째 구독자가 1번을, 두번째 구독자가 3번을 수신하게 된다.
+		//바로 getObservable 함수를 호출한 아래 예제 결과는 첫번째, 두번째 구독자 모두 동일하게 5번을 수신하게 된다.
 		Observable<String> source = Observable.defer(supplier);
 		source.subscribe(val -> Log.i("Subscriber #1 : " + val));
 		source.subscribe(val -> Log.i("Subscriber #2 : " + val));
