@@ -9,6 +9,10 @@ public class CommonUtils {
 		startTime = System.currentTimeMillis();
 	}
 	
+	public static void exampleComplete() { 
+		System.out.println("-----------------------");
+	}
+	
 	public static void sleep(int millis) {
 		try {
 			Thread.sleep(millis);
