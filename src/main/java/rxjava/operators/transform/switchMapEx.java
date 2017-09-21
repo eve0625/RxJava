@@ -6,7 +6,7 @@ import common.CommonUtils;
 import common.Log;
 import io.reactivex.Observable;
 
-public class switchMapEx {
+public class SwitchMapEx {
 
 	/**
 	 * switchMap : 인터리빙이 발생할 수 있는 상황에서, 순서를 보장하기 위해 기존에 진행중인던 작업을 바로 중단함.
@@ -33,7 +33,7 @@ public class switchMapEx {
 	}
 	
 	public static void main(String[] args) {
-		switchMapEx ex = new switchMapEx();
+		SwitchMapEx ex = new SwitchMapEx();
 		ex.test();
 	}
 

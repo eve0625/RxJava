@@ -6,7 +6,7 @@ import common.CommonUtils;
 import common.Log;
 import io.reactivex.Observable;
 
-public class concatMapEx {
+public class ConcatMapEx {
 
 	/**
 	 * concatMap : flatMap과 유사하나, 인터리빙이 발생할 수 있는 상황에서 데이터 처리 순서가 보장됨
@@ -56,7 +56,7 @@ RxComputationThreadPool-4 | 929 | value = 5♢
 	}
 	
 	public static void main(String[] args) {
-		concatMapEx ex = new concatMapEx();
+		ConcatMapEx ex = new ConcatMapEx();
 		ex.test();
 	}
 
