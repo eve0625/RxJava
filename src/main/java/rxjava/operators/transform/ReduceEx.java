@@ -1,4 +1,4 @@
-package rxjava.operators;
+package rxjava.operators.transform;
 
 import io.reactivex.Maybe;
 import io.reactivex.Observable;
