@@ -1,5 +1,7 @@
 package common;
 
+import java.util.Random;
+
 public class CommonUtils {
 
 	//실행 시간을 표기하기 위한 정적 변수
@@ -19,5 +21,13 @@ public class CommonUtils {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void doSomething() { 
+		try { 
+			Thread.sleep(new Random().nextInt(100));
+		} catch (InterruptedException e) { 
+			e.printStackTrace();
+		}		
 	}
 }
