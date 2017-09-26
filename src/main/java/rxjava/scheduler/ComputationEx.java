@@ -11,6 +11,7 @@ public class ComputationEx {
 
 	/**
 	 * computation : CPU에 대응하는 계산용 스케쥴러. 대기시간 없이 빠르게 결과를 도출해야 할 때 사용
+	 * CPU 개수만큼 스레드를 생성
 	 * 아래 예제를 실행하다보면,, 동일한 스레드에서 동작하기도 함
 	 */
 	public void test() {
