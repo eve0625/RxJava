@@ -20,13 +20,13 @@ public class NewThreadEx {
 			.subscribeOn(Schedulers.newThread())
 			.subscribe(Log::i);
 		
-		//CommonUtils.sleep(500);
+		CommonUtils.sleep(500);
 		
 		Observable.fromArray(orgs)
-		.doOnNext(data -> Log.v("Original data : " + data))
-		.map(data -> "##" + data + "##")
-		.subscribeOn(Schedulers.newThread())
-		.subscribe(Log::i);
+			.doOnNext(data -> Log.v("Original data : " + data))
+			.map(data -> "##" + data + "##")
+			.subscribeOn(Schedulers.newThread())
+			.subscribe(Log::i);
 	
 		CommonUtils.sleep(500);
 		
