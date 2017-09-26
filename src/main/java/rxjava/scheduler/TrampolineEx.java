@@ -23,7 +23,7 @@ public class TrampolineEx {
 			.map(data -> "##" + data + "##")
 			.subscribe(Log::i);
 		
-		CommonUtils.sleep(1000);
+		//CommonUtils.sleep(1000);
 	}
 
 	public static void main(String[] args) {
