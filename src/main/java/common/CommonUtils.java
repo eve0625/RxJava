@@ -1,5 +1,7 @@
 package common;
 
+import java.io.IOException;
+import java.net.InetAddress;
 import java.util.Random;
 
 public class CommonUtils {
@@ -31,5 +33,14 @@ public class CommonUtils {
 		} catch (InterruptedException e) { 
 			e.printStackTrace();
 		}		
+	}
+	
+	public static boolean isNetworkAvailable() { 
+		try {
+			return InetAddress.getByName("www.google.com").isReachable(1000);
+		} catch (IOException e) {
+			Log.v("Network is not available");	
+		}
+		return false;
 	}
 }
